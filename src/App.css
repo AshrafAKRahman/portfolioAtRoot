@@ -24,6 +24,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none !important;
+}
 
 html{
   scroll-behavior: smooth;
@@ -44,6 +47,7 @@ h1, h2, h3, h4, h6{
   padding: 0;
   line-height: normal;
 }
+
 .black-header {
   color: #000000;
 }
@@ -353,6 +357,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 86%;
 }
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -421,6 +426,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 0;
   transition: 0.4s ease-in-out;
 }
+
 .proj-imgbx:hover::before {
   height: 100%;
 }
@@ -433,7 +439,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  
 }
+
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
@@ -441,6 +449,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-txtx h4 {
   font-size: 30px;
   font-weight: 700;
+  color: #ffffff;
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
@@ -449,6 +458,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+  color: #ffffff;
 }
 .background-image-right {
   top: 20%;

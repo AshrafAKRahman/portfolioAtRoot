@@ -1,7 +1,7 @@
 import { Nav, Col, Container, Tab, Row } from "react-bootstrap";
 import { ProjectCard } from "./PrjoectCard";
-import projImg1 from "../assets/img/Trading Bot.png";
-import projImg2 from "../assets/img/RPS.jpg";
+import projImg1 from "../assets/img/RPS.jpg";
+import projImg2 from "../assets/img/projImg2.jpg";
 import projImg3 from "../assets/img/API.jpg";
 import projImg4 from "../assets/img/Testing.jpg";
 import projImg5 from "../assets/img/Tables_Database.png";
@@ -21,6 +21,7 @@ export const Projects = () => {
       title: "Dictionary",
       description: "JavaScript 3rd Party API Fetch",
       imgUrl: projImg2,
+      link: "https://dictionary-tfpc.onrender.com",
     },
     {
       title: "News App",
