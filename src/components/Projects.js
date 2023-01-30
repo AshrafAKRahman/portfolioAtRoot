@@ -24,9 +24,10 @@ export const Projects = () => {
       link: "https://dictionary-tfpc.onrender.com",
     },
     {
-      title: "News App",
-      description: "React 3rd Party API Fetch ",
+      title: "Weather App",
+      description: "Typescript 3rd Party API Fetch ",
       imgUrl: projImg3,
+      link: "https://weather-app-s7dj.onrender.com/",
     },
     {
       title: "Weather App",
