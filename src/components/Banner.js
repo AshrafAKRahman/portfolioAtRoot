@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css/skyblue";
-import headerImg from "../assets/img/header-img.png";
+import headerImg from "../assets/img/header-img2.png";
 import carousel1 from "../assets/img/carousel1.png";
 import carousel2 from "../assets/img/carousel2.png";
 import carousel3 from "../assets/img/carousel3.png";

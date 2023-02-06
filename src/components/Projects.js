@@ -3,9 +3,9 @@ import { ProjectCard } from "./PrjoectCard";
 import projImg1 from "../assets/img/RPS.jpg";
 import projImg2 from "../assets/img/projImg2.jpg";
 import projImg3 from "../assets/img/API.jpg";
-import projImg4 from "../assets/img/Testing.jpg";
-import projImg5 from "../assets/img/Tables_Database.png";
-import projImg6 from "../assets/img/ticketing-system.png";
+import projImg4 from "../assets/img/Tables_Database.png";
+import projImg5 from "../assets/img/ticketing-system.png";
+import projImg6 from "../assets/img/lifeCare.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -30,9 +30,10 @@ export const Projects = () => {
       link: "https://weather-app-s7dj.onrender.com/",
     },
     {
-      title: "Weather App",
+      title: "Bookmarks & Todo App",
       description: "Typescript",
       imgUrl: projImg4,
+      link: "https://bookmarks-and-todo-mvp.onrender.com",
     },
     {
       title: "Ticketing HelpDesk",

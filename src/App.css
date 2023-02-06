@@ -281,10 +281,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 #banner-img {
-  margin-top: -30px;
+  margin-top: -180px;
 }
 
 .carousel {
+  margin-top: 40px;
   border-radius: 64px;;
   box-shadow:  #666;
 }
