@@ -246,7 +246,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 200px 0 100px 0;
+  padding: 200px 0 0px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
@@ -285,9 +285,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .carousel {
-  margin-top: 40px;
-  border-radius: 64px;;
+  margin-top: -10px;
+  /* border-radius: 64px;; */
   box-shadow:  #666;
+  height: 350px;
+  width: 430px;
 }
 
 .txt-rotate > .wrap {
@@ -305,7 +307,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 35px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: 40px;
+  margin-top: 80px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .skill h2 {
