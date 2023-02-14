@@ -33,13 +33,16 @@ export const Contact = () => {
     }
     setButtonText("Sending...");
     try {
-      const response = await fetch("http://localhost:3005/api/allEmails", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formDetails),
-      });
+      const response = await fetch(
+        "https://portfolio-backend-0f32.onrender.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formDetails),
+        }
+      );
       const data = await response.json();
       setStatus({ success: true, message: data.message });
       setFormDetails(formInitialDetails);
