@@ -35,7 +35,7 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2 className="black-header"> Technological Skills </h2>
+              <h2 className="back-header">Skills</h2>
               <p>
                 Below is a brief overview of the technologies i am most
                 comfortable working with for full stack development. I am

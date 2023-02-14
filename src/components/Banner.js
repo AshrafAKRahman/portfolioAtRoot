@@ -66,21 +66,32 @@ export const Banner = () => {
               </h1>
             </div>
             {/* <div id="banner-content"> */}
-            <Splide options="{ rewind: true }" aria-label="My Favorite Images">
-              <SplideSlide>
-                <img
-                  src={carousel1}
-                  alt="software-developer"
-                  className="carousel"
-                />
-              </SplideSlide>
-              <SplideSlide>
-                <img src={carousel2} alt="team-player" className="carousel" />
-              </SplideSlide>
-              <SplideSlide>
-                <img src={carousel3} alt="carousel3" className="carousel" />
-              </SplideSlide>
-            </Splide>
+            <Container>
+              <Row>
+                <Splide
+                  options="{ rewind: true }"
+                  aria-label="My Favorite Images"
+                >
+                  <SplideSlide>
+                    <img
+                      src={carousel1}
+                      alt="software-developer"
+                      className="carousel"
+                    />
+                  </SplideSlide>
+                  <SplideSlide>
+                    <img
+                      src={carousel2}
+                      alt="team-player"
+                      className="carousel"
+                    />
+                  </SplideSlide>
+                  <SplideSlide>
+                    <img src={carousel3} alt="carousel3" className="carousel" />
+                  </SplideSlide>
+                </Splide>
+              </Row>
+            </Container>
 
             {/* </div> */}
           </Col>
