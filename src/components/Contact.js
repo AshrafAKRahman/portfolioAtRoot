@@ -23,28 +23,33 @@ export const Contact = () => {
       [category]: value,
     });
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "message Sent successfully" });
-    } else {
-      setStatus({
-        success: false,
-        message: "Something went wrong, please try again later",
-      });
+    const { firstName, lastName, email, phone, message } = formDetails;
+    if (!firstName || !lastName || !email || !phone || !message) {
+      alert("Please fill in all fields.");
+      return;
     }
+    setButtonText("Sending...");
+    try {
+      const response = await fetch("http://localhost:3005/api/allEmails", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formDetails),
+      });
+      const data = await response.json();
+      setStatus({ success: true, message: data.message });
+      setFormDetails(formInitialDetails);
+      alert("Message sent!");
+    } catch (error) {
+      setStatus({ success: false, message: "Error sending message." });
+    }
+    setButtonText("Send");
   };
+
   return (
     <section className="contact" id="connect">
       <Container>
@@ -88,7 +93,7 @@ export const Contact = () => {
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="text"
-                          value={formDetails.lasttName}
+                          value={formDetails.lastName}
                           placeholder="Last Name"
                           onChange={(e) =>
                             onFormUpdate("lastName", e.target.value)
