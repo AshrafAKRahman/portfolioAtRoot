@@ -34,7 +34,7 @@ export const Contact = () => {
     setButtonText("Sending...");
     try {
       const response = await fetch(
-        "https://portfolio-backend-0f32.onrender.com",
+        "https://portfolio-backend-9fz6.onrender.com/api/allEmails",
         {
           method: "POST",
           headers: {
