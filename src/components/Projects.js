@@ -31,7 +31,8 @@ export const Projects = () => {
     },
     {
       title: "Bookmarks & Todo App",
-      description: "Typescript",
+      description:
+        "React Personal Project using Chakra UI with Local Storage and UUID",
       imgUrl: projImg4,
       link: "https://bookmarks-and-todo-mvp.onrender.com",
     },
@@ -39,6 +40,45 @@ export const Projects = () => {
       title: "Ticketing HelpDesk",
       description: "React RESTful API & Testing",
       imgUrl: projImg5,
+      link: "https://frontend-ticketing.onrender.com/",
+    },
+    {
+      title: "LifeCare App",
+      description: "Full stack solution to real world problem",
+      imgUrl: projImg6,
+    },
+  ];
+  const projectsTwo = [
+    {
+      title: "Rock, Paper, Scissors",
+      description: "JavaScript Design & Development",
+      imgUrl: projImg1,
+      link: "https://github.com/AshrafAKRahman/RPS",
+    },
+    {
+      title: "Dictionary",
+      description: "JavaScript 3rd Party API Fetch",
+      imgUrl: projImg2,
+      link: "https://github.com/AshrafAKRahman/Dictionary_APIFetchRequest",
+    },
+    {
+      title: "Weather App",
+      description: "Typescript 3rd Party API Fetch ",
+      imgUrl: projImg3,
+      link: "https://github.com/AshrafAKRahman/weaher-app",
+    },
+    {
+      title: "Bookmarks & Todo App",
+      description:
+        "React Personal Project using Chakra UI with Local Storage and UUID",
+      imgUrl: projImg4,
+      link: "https://github.com/AshrafAKRahman/bookmarks-todo-chakra",
+    },
+    {
+      title: "Ticketing HelpDesk",
+      description: "React RESTful API & Testing",
+      imgUrl: projImg5,
+      link: "https://github.com/AshrafAKRahman/Ticketing-system",
     },
     {
       title: "LifeCare App",
@@ -101,7 +141,7 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <Row>
-                          {projects.map((project, index) => {
+                          {projectsTwo.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
