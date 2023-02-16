@@ -48,17 +48,6 @@ h1, h2, h3, h4, h6{
   line-height: normal;
 }
 
-.navbar-toggle-icon {
-  background-color: #000; /* Set the background color of the hamburger icon */
-}
-
-.navbar-link {
-  color: #000; /* Set the color of the menu links */
-}
-
-.navbar-link:hover {
-  color: #fff; /* Set the hover color of the menu links */
-}
 
 .black-header {
   color: #000000;
