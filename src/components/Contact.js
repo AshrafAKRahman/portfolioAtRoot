@@ -79,8 +79,6 @@ export const Contact = () => {
                   }
                 >
                   <h2>Get In Touch</h2>
-                  <p> ashraf.ak.rahman@gmail.com</p>
-                  <p>07555 095 091</p>
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">

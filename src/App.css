@@ -48,6 +48,18 @@ h1, h2, h3, h4, h6{
   line-height: normal;
 }
 
+.navbar-toggle-icon {
+  background-color: #000; /* Set the background color of the hamburger icon */
+}
+
+.navbar-link {
+  color: #000; /* Set the color of the menu links */
+}
+
+.navbar-link:hover {
+  color: #fff; /* Set the hover color of the menu links */
+}
+
 .black-header {
   color: #000000;
 }
@@ -287,7 +299,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 #banner-img {
-  margin-top: -180px;
+  margin-top: -250px;
 }
 
 .carousel {
@@ -300,6 +312,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+@media only screen and (max-width: 576px){
+  #banner-img {
+    margin-top: -120px;
+  }
 }
 
 /************ Skills Css ************/
