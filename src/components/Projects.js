@@ -44,8 +44,10 @@ export const Projects = () => {
     },
     {
       title: "LifeCare App",
-      description: "Full stack solution to real world problem",
+      description:
+        "Full stack solution to real world problem to login please use: seana.s@lifecare.com and password: lifecaretestuser123! ",
       imgUrl: projImg6,
+      link: "https://life-care.onrender.com/",
     },
   ];
   const projectsTwo = [
@@ -82,8 +84,10 @@ export const Projects = () => {
     },
     {
       title: "LifeCare App",
-      description: "Full stack solution to real world problem",
+      description:
+        "Full stack solution to real world problem to login please use: seana.s@lifecare.com and password: lifecaretestuser123! ",
       imgUrl: projImg6,
+      link: "https://github.com/SchoolOfCode/bc13_final-project_front-end-coding-for-dummys",
     },
   ];
 
