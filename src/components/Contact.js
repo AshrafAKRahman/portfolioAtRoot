@@ -33,16 +33,13 @@ export const Contact = () => {
     }
     setButtonText("Sending...");
     try {
-      const response = await fetch(
-        "https://portfolio-backend-9fz6.onrender.com/api/allEmails",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formDetails),
-        }
-      );
+      const response = await fetch("send_email.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formDetails),
+      });
       const data = await response.json();
       setStatus({ success: true, message: data.message });
       setFormDetails(formInitialDetails);
@@ -52,6 +49,39 @@ export const Contact = () => {
     }
     setButtonText("Send");
   };
+  
+
+
+
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const { firstName, lastName, email, phone, message } = formDetails;
+  //   if (!firstName || !lastName || !email || !phone || !message) {
+  //     alert("Please fill in all fields.");
+  //     return;
+  //   }
+  //   setButtonText("Sending...");
+  //   try {
+  //     const response = await fetch(
+  //       "https://portfolio-backend-9fz6.onrender.com/api/allEmails",
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(formDetails),
+  //       }
+  //     );
+  //     const data = await response.json();
+  //     setStatus({ success: true, message: data.message });
+  //     setFormDetails(formInitialDetails);
+  //     alert("Message sent!");
+  //   } catch (error) {
+  //     setStatus({ success: false, message: "Error sending message." });
+  //   }
+  //   setButtonText("Send");
+  // };
 
   return (
     <section className="contact" id="connect">
