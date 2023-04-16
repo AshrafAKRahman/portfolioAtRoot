@@ -18,7 +18,7 @@ if (!empty($data['firstName']) && !empty($data['lastName']) && !empty($data['ema
     $phone = $data['phone'];
     $message = $data['message'];
     
-    $to = "ashraf.ak.rahman@gmail.com";
+    $to = "ashraf.ak.rahman@otlook.com";
     $subject = "Contact Form Submission";
     $body = "Name: {$firstName} {$lastName}\nEmail: {$email}\nPhone: {$phone}\n\nMessage:\n{$message}";
 
