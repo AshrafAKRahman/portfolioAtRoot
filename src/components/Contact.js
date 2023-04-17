@@ -45,10 +45,12 @@ export const Contact = () => {
       setFormDetails(formInitialDetails);
       alert("Message sent!");
     } catch (error) {
+      console.error('Error:', error); // Add this line to log the error to the console
       setStatus({ success: false, message: "Error sending message." });
     }
     setButtonText("Send");
   };
+  
   
 
 
