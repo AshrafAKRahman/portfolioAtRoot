@@ -40,19 +40,21 @@ export const Contact = () => {
         },
         body: JSON.stringify(formDetails),
       });
+      
+      console.log('Server Response:', response); // Add this line to log the server response
+      console.log('Server Response Text:', await response.text()); // Add this line to log the response text
+  
       const data = await response.json();
       setStatus({ success: true, message: data.message });
       setFormDetails(formInitialDetails);
       alert("Message sent!");
     } catch (error) {
-      console.error('Error:', error); // Add this line to log the error to the console
+      console.error('Error:', error);
       setStatus({ success: false, message: "Error sending message." });
     }
     setButtonText("Send");
   };
   
-  
-
 
 
 
