@@ -44,7 +44,7 @@ export const Contact = () => {
         }
       );
   
-      console.log('Server Response:', response); // Keep this line to log the server response
+      console.log('Server Response:', response); // This line is to log the server response
   
       const data = await response.json();
       setStatus({ success: true, message: data.message });
