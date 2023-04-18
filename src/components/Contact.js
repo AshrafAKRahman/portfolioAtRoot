@@ -33,16 +33,18 @@ export const Contact = () => {
     }
     setButtonText("Sending...");
     try {
-      const response = await fetch("send_email.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formDetails),
-      });
-      
-      console.log('Server Response:', response); // Add this line to log the server response
-      console.log('Server Response Text:', await response.text()); // Add this line to log the response text
+      const response = await fetch(
+        "https://portfolio-backend-9fz6.onrender.com/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formDetails),
+        }
+      );
+  
+      console.log('Server Response:', response); // Keep this line to log the server response
   
       const data = await response.json();
       setStatus({ success: true, message: data.message });
